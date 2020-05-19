@@ -6,6 +6,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -48,14 +52,14 @@ module.exports = _react2.default.createClass({
   displayName: 'DisqusThread',
 
   propTypes: {
-    id: _react2.default.PropTypes.string,
+    id: _propTypes2.default.string,
 
     /**
      * `shortname` tells the Disqus service your forum's shortname,
      * which is the unique identifier for your website as registered
      * on Disqus. If undefined , the Disqus embed will not load.
      */
-    shortname: _react2.default.PropTypes.string.isRequired,
+    shortname: _propTypes2.default.string.isRequired,
 
     /**
      * `identifier` tells the Disqus service how to identify the
@@ -66,7 +70,7 @@ module.exports = _react2.default.createClass({
      * domains, so we recommend using your own unique way of
      * identifying a thread.
      */
-    identifier: _react2.default.PropTypes.string,
+    identifier: _propTypes2.default.string,
 
     /**
      * `title` tells the Disqus service the title of the current page.
@@ -74,7 +78,7 @@ module.exports = _react2.default.createClass({
      * If undefined, Disqus will use the <title> attribute of the page.
      * If that attribute could not be used, Disqus will use the URL of the page.
      */
-    title: _react2.default.PropTypes.string,
+    title: _propTypes2.default.string,
 
     /**
      * `url` tells the Disqus service the URL of the current page.
@@ -83,37 +87,37 @@ module.exports = _react2.default.createClass({
      * is undefined. In addition, this URL is always saved when a thread is
      * being created so that Disqus knows what page a thread belongs to.
      */
-    url: _react2.default.PropTypes.string,
+    url: _propTypes2.default.string,
 
     /**
      * `category_id` tells the Disqus service the category to be used for
      * the current page. This is used when creating the thread on Disqus
      * for the first time.
      */
-    category_id: _react2.default.PropTypes.string,
+    category_id: _propTypes2.default.string,
 
     /**
      * `onNewComment` function accepts one parameter `comment` which is a
      * JavaScript object with comment `id` and `text`. This allows you to track
      * user comments and replies and run a script after a comment is posted.
      */
-    onNewComment: _react2.default.PropTypes.func,
+    onNewComment: _propTypes2.default.func,
 
     /**
     * `api_key` tells Disqus service there is a key available for SSO.
     */
-    api_key: _react2.default.PropTypes.string,
+    api_key: _propTypes2.default.string,
     /**
     *
     * `remote_auth_s3` is needed for Disqus SSO
     *
     */
-    remote_auth_s3: _react2.default.PropTypes.string,
+    remote_auth_s3: _propTypes2.default.string,
     /**
      * `sso` is an object with properties for a Disqus sso section
      *
      */
-    sso: _react2.default.PropTypes.object
+    sso: _propTypes2.default.object
 
   },
 

@@ -20,16 +20,19 @@
   "license": "MIT",
   "homepage": "https://github.com/etanlubeck/react-disqus-comments-sso",
   "peerDependencies": {
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react": "^16.0",
+    "react-dom": "^16.0"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
-    "rackt-cli": "^0.5.3",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "rackt-cli": "^0.8.0",
+    "react": "^16.0",
+    "react-dom": "^16.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
   }
 }
